@@ -11,7 +11,7 @@
 #We will use a nested loop for build the columns and the rows
 #The first for will be making the rows
 for ($row = 1;$row <= 8;$row++){
-    echo "<tr></tr>";
+    echo "<tr>";
     #And the 2nd one to build the columns
     for ($column = 0; $column < 8; $column++){
         #Here we will sum all the rows and columns and see if they are odd or not
@@ -24,6 +24,8 @@ for ($row = 1;$row <= 8;$row++){
         echo "<td height=30px width=30px bgcolor=black></td>";
         }
         }
+    echo "</tr>";
+    
 }
 
 ?>
